@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+   <head>
+
+
+
+<!--Hi MTC. I am using bootstrap 5 with no Jquery as this is the latest trend. I am not using anything fancy like SASS or webpack, and i am trying to make it as light and fast as possible (SEO). I would not mind building this with any other framework,with or without jquery (especially if older browsers would have to be taken under consideration).
+ 
+I am using the default bootstrap carousel and something called a tiny carousel just to test it. 
+ 
+I could build it many different ways but since I have only a couple of hours in the evening this will have to do.
+ 
+Enjoy
+ 
+-->
+<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <link href="cssforMTC.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+      <script src="https://kit.fontawesome.com/1c2e8cad98.js" crossorigin="anonymous"></script>
+      <title>MCT Interview - Bart Dominik</title>
+   </head>
+   <body>
+      <a href="javascript:void(0);" class="icon mobileButton" id="icon" onclick="showHideMobileNav()">
+      <i class="fa fa-bars"></i>
+      <i class="fas fa-times"></i>
+      </a>
+      <a href="#" class="mobileLogo" id="mobileLogo"><img src="img/logo.png"></a>
+      <!--banner-->
+      <div class="slider">
+         <div class="topnav" id="myTopnav">
+            <div class="container">
+               <div class="row">
+                  <div class="topLeft"> 
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <div class="leftNav">
+                     <ul>
+                        <li>
+                           <a href="#"> Shop </a>
+                        </li>
+                        <li>
+                           <a href="#"> Plan My Kitchen </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="logoTop">  
+                     <img src="img/logo.png">
+                  </div>
+                  <div class="rightNav">
+                     <ul>
+                        <li>
+                           <a href="#"> About Us </a>
+                        </li>
+                        <li>
+                           <a href="#"> Gallery </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="topRight"> <a class="btn transparentBtn " href="#"> My Order <i class="fas fa-shopping-cart"></i>  </a> </div>
+               </div>
+            </div>
+            <!--//container-->
+         </div>
+         <!--//topnav-->
+         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="textOver">
+               <p>Design and order your new kitchen online today</p>
+               <h1> Bespoke & made to measure
+                  handmade kitchen design 
+               </h1>
+               <a class="btn goldBtn" href="#"> Order Now </a>
+            </div>
+            <ol class="carousel-indicators">
+               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+               <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active cover" style=" background: url(img/kitchen-slide1.png) no-repeat center center;">
+               </div>
+               <div class="carousel-item cover" style=" background: url(img/kitchen-slide1.png) no-repeat center center;">
+               </div>
+               <div class="carousel-item cover" style=" background: url(img/kitchen-slide1.png) no-repeat center center;">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-6 order-lg-2 nopad align-self-center">
+               <div class="textArea">
+                  <p class="smallGold">Quality Craftmanship from build to delivery</p>
+                  <h2>Discover the beauty of a handmade kitchen</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu, feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna eu pharetra tincidunt, mauris purus ultrices. </p>
+                  <a class="btn goldBtn" href="#"> About Us </a>
+               </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 imageCover nopad">
+               <!--image background to fill the height based on the text height on the right...-->
+            </div>
+         </div>
+      </div>
+      <div class="section lightGrey paddingTopBottom117">
+         <div class="testimonials">
+            <div class="my-slider">
+               <!--testimonial-->
+               <div>
+                  <p class="smallGold">What Our Customers Say</p>
+                  <h4 class=""> Over 35 years experience designing handmade kitchens </h4>
+                  <p class="testimonial"> Since my first contact I have received a very high level of customer service and advice with my kitchen plans. Ben responded very quickly to all of my emails and delivery of the kitchen was as planned. </p>
+                  <p class="by"> Jane, Dundee </p>
+               </div>
+               <!--//testimonial-->
+               <!--testimonial-->
+               <div>
+                  <p class="smallGold">What Our Customers Say 2</p>
+                  <h4 class=""> Over 35 years experience designing handmade kitchens </h4>
+                  <p class="testimonial"> Since my first contact I have received a very high level of customer service and advice with my kitchen plans. Since my first contact I have received a very high level of customer service and advice with my kitchen plans. Ben responded very quickly to all of my emails and delivery of the kitchen was as planned. Ben responded very quickly to all of my emails and delivery of the kitchen was as planned. Since my first contact I have received a very high level of customer service and advice with my kitchen plans. Ben responded very quickly to all of my emails and delivery of the kitchen was as planned. </p>
+                  <p class="by"> Jane, Dundee </p>
+               </div>
+               <!--//testimonial-->
+               <!--testimonial-->
+               <div>
+                  <p class="smallGold">What Our Customers Say 3</p>
+                  <h4 class=""> Over 35 years experience designing handmade kitchens </h4>
+                  <p class="testimonial"> Since my first contact I have received a very high level of customer service and advice with my kitchen plans. Ben responded very quickly to all of my emails and delivery of the kitchen was as planned. Since my first contact I have received a very high level of customer service and advice with my kitchen plans. Ben responded very quickly to all of my emails and delivery of the kitchen was as planned.</p>
+                  <p class="by"> Jane, Dundee </p>
+               </div>
+               <!--//testimonial-->
+            </div>
+         </div>
+         <div class="text-center">  <a class="btn goldBtn" href="#"> Frequently Asked Questions </a> </div>
+      </div>
+      <div class="section whiteBg paddingTopBottom100">
+         <div class="container">
+            <div class="row">
+               <div class=text-center
+                  >
+                  <h4>Customer Gallery </h4>
+               </div>
+            </div>
+            <div class="row paddingTopBottom30 ">
+               <div class="col-md-3">
+                  <img class="galleryItem" alt=".." src="img/handmade-kitchen1.png"/>
+               </div>
+               <div class="col-md-3">
+                  <img class="galleryItem" alt=".."   src="img/handmade-kitchen2.png"/>
+               </div>
+               <div class="col-md-3">
+                  <img  class="galleryItem" alt=".."  src="img/handmade-kitchen3.png"/>
+               </div>
+               <div  class="col-md-3">
+                  <img class="galleryItem" alt=".."  src="img/handmade-kitchen4.png"/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="text-center">  <a class="btn goldBtn" href="#"> View More </a> </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="container">
+            <div class="logoBit text-center">
+               <img src="img/logo.png">
+            </div>
+         </div>
+         <div class="container borderTopBottom paddingTopBottom60">
+            <div class="row">
+               <div class="col-lg-3 col-md-4">
+                  <h4>About</h4>
+                  <ul>
+                     <li> <a href="#"> Shop </a> </li>
+                     <li> <a href="#"> Plan My Kitchen </a> </li>
+                     <li> <a href="#"> About Us</a> </li>
+                     <li> <a href="#"> Gallery</a> </li>
+                  </ul>
+               </div>
+               <!--//col-->
+               <div class="col-lg-3 col-md-4">
+                  <h4>Service</h4>
+                  <ul>
+                     <li> <a href="#"> FAQ </a> </li>
+                     <li> <a href="#"> Contact </a> </li>
+                     <li> <a href="#"> How to Buy </a> </li>
+                     <li> <a href="#"> Downloads </a> </li>
+                  </ul>
+               </div>
+               <!--//col-->
+               <div class="col-lg-3 col-md-4">
+                  <h4>Info</h4>
+                  <ul>
+                     <li> <a href="#">   Delivery </a> </li>
+                     <li> <a href="#"> Terms </a> </li>
+                     <li> <a href="#"> Privacy </a> </li>
+                  </ul>
+               </div>
+               <!--//col-->
+               <div class="col-lg-3 col-md-4">
+                  <h4>Follow</h4>
+                  <ul class="socialBottom">
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                              <path id="Combined_Shape" data-name="Combined Shape" d="M20,40A20.005,20.005,0,0,1,12.215,1.572a20.005,20.005,0,0,1,15.57,36.856A19.875,19.875,0,0,1,20,40ZM15,17.75v3.2h2.706V29h3.3V20.949h2.567L24,17.75H21.011V15.535a1.809,1.809,0,0,1,.282-1.125,1.64,1.64,0,0,1,1.3-.421h1.688V11.14A17.528,17.528,0,0,0,21.82,11a4.093,4.093,0,0,0-2.989,1.108,4.187,4.187,0,0,0-1.125,3.111V17.75Z" transform="translate(0 0)" fill="#fff"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                              <path id="Combined_Shape" data-name="Combined Shape" d="M20,40A20.005,20.005,0,0,1,12.215,1.572a20.005,20.005,0,0,1,15.57,36.856A19.875,19.875,0,0,1,20,40ZM10,27.967h0A12.672,12.672,0,0,0,16.966,30a12.544,12.544,0,0,0,7.053-2.033,12.414,12.414,0,0,0,4.37-4.89A12.884,12.884,0,0,0,29.9,17.062a2.6,2.6,0,0,0-.043-.562,10.014,10.014,0,0,0,2.293-2.38,9.781,9.781,0,0,1-2.6.735,4.523,4.523,0,0,0,1.99-2.509,9.27,9.27,0,0,1-2.9,1.082,5.151,5.151,0,0,0-1.492-1.039,4.362,4.362,0,0,0-1.84-.39,4.418,4.418,0,0,0-2.25.606,4.474,4.474,0,0,0-1.644,1.666,4.535,4.535,0,0,0-.606,2.272,6.336,6.336,0,0,0,.086,1.039,12.706,12.706,0,0,1-9.346-4.759,4.407,4.407,0,0,0-.086,4.457,5.059,5.059,0,0,0,1.471,1.644,4.3,4.3,0,0,1-2.033-.606V18.4a4.374,4.374,0,0,0,1.039,2.856,4.6,4.6,0,0,0,2.6,1.6,5.807,5.807,0,0,1-1.211.13c-.259,0-.535-.015-.822-.043a4.537,4.537,0,0,0,1.579,2.228,4.248,4.248,0,0,0,2.661.887,9.044,9.044,0,0,1-5.668,1.948C10.68,28.01,10.317,28,10,27.967Z" transform="translate(0 0)" fill="#fff"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                              <path id="Combined_Shape" data-name="Combined Shape" d="M20,40A20.005,20.005,0,0,1,12.215,1.572a20.005,20.005,0,0,1,15.57,36.856A19.875,19.875,0,0,1,20,40Zm0-29c-1.731,0-2.995.02-3.757.06a7.672,7.672,0,0,0-1.989.341A4.706,4.706,0,0,0,11.4,14.254a7.672,7.672,0,0,0-.341,1.989C11.02,17.005,11,18.269,11,20s.02,2.995.06,3.757a7.669,7.669,0,0,0,.341,1.989,4.714,4.714,0,0,0,1.105,1.748,4.305,4.305,0,0,0,1.748,1.065,6.6,6.6,0,0,0,1.989.382c.745.04,2.009.06,3.757.06s3.011-.02,3.757-.06a7.635,7.635,0,0,0,1.989-.341A4.706,4.706,0,0,0,28.6,25.745a7.635,7.635,0,0,0,.341-1.989c.04-.745.06-2.009.06-3.757s-.014-2.993-.041-3.737a8.162,8.162,0,0,0-.361-2.009A4.706,4.706,0,0,0,25.745,11.4a7.669,7.669,0,0,0-1.989-.341C22.994,11.02,21.73,11,20,11Zm.643,16.393H19.357c-1.055,0-1.893-.013-2.491-.04a8.511,8.511,0,0,1-2.17-.322A3.062,3.062,0,0,1,12.968,25.3a8.56,8.56,0,0,1-.321-2.17c-.026-.6-.04-1.435-.04-2.491V19.357c0-1.055.013-1.893.04-2.491a8.162,8.162,0,0,1,.321-2.17A2.926,2.926,0,0,1,14.7,12.968a8.571,8.571,0,0,1,2.17-.321c.6-.026,1.436-.04,2.491-.04h1.285c1.056,0,1.894.013,2.491.04a8.152,8.152,0,0,1,2.17.321A2.918,2.918,0,0,1,27.031,14.7a8.106,8.106,0,0,1,.322,2.17c.026.57.04,1.408.04,2.491v1.285c0,1.056-.013,1.894-.04,2.491a8.5,8.5,0,0,1-.322,2.17A3.052,3.052,0,0,1,25.3,27.031a8.1,8.1,0,0,1-2.17.322C22.564,27.379,21.726,27.392,20.642,27.392ZM20,15.379a4.523,4.523,0,0,0-2.31.623A4.653,4.653,0,0,0,16,17.689a4.6,4.6,0,0,0,0,4.621A4.647,4.647,0,0,0,17.689,24a4.6,4.6,0,0,0,4.621,0A4.642,4.642,0,0,0,24,22.31a4.6,4.6,0,0,0,0-4.621A4.647,4.647,0,0,0,22.31,16,4.523,4.523,0,0,0,20,15.379Zm4.821-1.286a1.085,1.085,0,0,0,0,2.17.982.982,0,0,0,.743-.321,1.25,1.25,0,0,0,.341-.763,1.1,1.1,0,0,0-1.084-1.085ZM20,23.013a3.017,3.017,0,1,1,2.129-.884A2.915,2.915,0,0,1,20,23.013Z" transform="translate(0 0)" fill="#fff"/>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <!--//col-->
+            </div>
+            <!--//row-->
+            <div class="row">
+               <div class="text-center">
+                  <p class="copy">
+                     Copyright Online MTC Home Kitchens 2018 - All rights reserved.</br>
+                     Responsive website design, Development & Hosting by mtc.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+      <script src="js.js"></script>
+   </body>
+</html>
