@@ -11,7 +11,7 @@ function showHideMobileNav() {
 
 
   //fix nav on scroll
-  window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 var mobileLogo = document.getElementById("mobileLogo");
 var header = document.getElementById("myTopnav");
 var sticky = header.offsetTop;
